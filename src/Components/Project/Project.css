@@ -1,0 +1,86 @@
+.project .title{
+    text-align: center;
+}
+
+.project .project_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2.5rem;
+}
+
+.project .project_card{
+       background: var(--color-ui-secondary);
+       padding: 25px;
+       border-radius: var(--radius-4);
+       transition: var(--transition);
+}
+.project .project_card:hover img{
+    transform: scale(1.2);
+}
+.project .project_card .image_container{
+    border-radius: var(--radius-4);
+    height: 230px;
+    overflow: hidden;
+}
+.project .project_card  .name{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 20px 0;
+
+}
+.project .project_card .button{
+    margin: 40px 0 20px 0;
+}
+.project .project_card .zoom_in{
+    animation: zoomIn 600ms ease;
+}
+
+@keyframes zoomIn {
+    0%{
+        scale: 0.5;
+    }
+    100%{
+        scale: 1;
+    }
+    
+}
+
+@media (max-width: 1000px) {
+    .project .project_container {
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.2rem;
+    }
+}
+@media (max-width: 600px) {
+    .project .project_container {
+        grid-template-columns: 100%;
+        gap: 1rem;
+    }
+}
+
+
+/* Ami je matal hawari moto hoye
+Jete jete paaye paaye gechi joriye
+Ami je matal hawari moto hoye
+Jete jete paaye paaye gechi joriye
+
+Ki kori vebe je mori bolbe ki loke
+Mondo koreche amake oi duti chokhe
+Ki naame deke bolbo tomake
+Mondo koreche amake oi duti chokhe
+
+Palate parini ami je dishehara
+Duti chokh jeno amay dicche pahara
+Palate parini ami je dishehara
+Duti chokh jeno amay dicche pahara
+
+Dhora pore gechi ami nijeri kache
+Janina tomar moneo ki eto prem ache
+Dhora pore gechi ami nijeri kache
+Janina tomar moneo ki eto prem ache
+Sotti jodi hoy boluk ja boleche ninduke
+Mondo koreche amake oi duti chokhe
+Ki naame deke bolbo tomake
+Mondo koreche amake oi duti chokhe
+Ki naame deke bolbo tomake
+Mondo koreche amake oi duti chokhe */

@@ -1,0 +1,54 @@
+.team .container .title {
+    text-align: center;
+}
+.team .container .description {
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.team .team_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-between;
+    gap: 20px;
+    overflow: hidden;
+}
+.team .team_card {
+    background: var(--color-ui-secondary);
+    border-radius: var(--radius-3);
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+.team .team_card .profile_container{
+    height: 220px;
+    overflow: hidden;
+    border-radius: var(--radius-3) var(--radius-3) 0 0;
+    transition: var(--transition);
+}
+.team .team_card:hover img{
+    transform: scale(1.2);
+}
+.team .team_card .details,
+.team .team_card .social_container{
+    text-align: center;
+    padding: 10px 20px;
+}
+.team .team_card .social_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.team .team_card .social_container .icon_container{
+    font-size: 20px;
+    background-color: var(--color-ui-variant);
+}
+
+@media (max-width:900px) {
+    .team .team_container{
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    }
+}
